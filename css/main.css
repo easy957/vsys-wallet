@@ -7,12 +7,8 @@ ol {
   list-style: none;
 }
 
-.visially-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+p {
+  margin: 0;
 }
 
 :root {
@@ -135,6 +131,18 @@ ol {
   opacity: 1;
 }
 
+.title-text {
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  color: var(--main-text-color-grey07);
+}
+
+.common-text {
+  font-size: 12px;
+  color: var(--main-text-color-grey07);
+}
+
 .login-container {
   height: 100vh;
 }
@@ -173,5 +181,9 @@ ol {
 
 .wallets-container {
   height: 100vh;
+}
+
+.form-select {
+  width: 161px;
 }
 /*# sourceMappingURL=main.css.map */
