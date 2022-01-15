@@ -143,6 +143,14 @@ p {
   color: var(--main-text-color-grey07);
 }
 
+.success-text {
+  color: var(--success-color);
+}
+
+.danger-text {
+  color: #dc3545;
+}
+
 .login-container {
   height: 100vh;
 }
@@ -183,7 +191,6 @@ p {
   height: 100vh;
 }
 
-<<<<<<< HEAD
 .card-box {
   background-color: var(--secondary-bcg-color-grey01);
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12);
@@ -193,9 +200,9 @@ p {
 .card {
   border: none;
   outline: none;
-=======
+}
+
 .form-select {
   width: 161px;
->>>>>>> c80bde7595dfb9cc759940e8eb3716f9ee36b013
 }
 /*# sourceMappingURL=main.css.map */

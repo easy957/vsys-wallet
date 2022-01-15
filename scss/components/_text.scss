@@ -1,11 +1,19 @@
 .title-text {
-  font-weight: 500;
-  font-size: 24px;
-  letter-spacing: 0.05em;
-  color: var(--main-text-color-grey07);
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: var(--main-text-color-grey07);
 }
 
 .common-text {
-  font-size: 12px;
-  color: var(--main-text-color-grey07);
+    font-size: 12px;
+    color: var(--main-text-color-grey07);
+}
+
+.success-text {
+    color: var(--success-color);
+}
+
+.danger-text {
+    color: #dc3545;
 }
