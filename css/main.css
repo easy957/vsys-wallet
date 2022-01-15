@@ -183,8 +183,20 @@ p {
   height: 100vh;
 }
 
+<<<<<<< HEAD
+.card-box {
+  background-color: var(--secondary-bcg-color-grey01);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12);
+  padding: 32px;
+}
+
+.card {
+  border: none;
+  outline: none;
+=======
 .form-select {
   width: 161px;
+>>>>>>> c80bde7595dfb9cc759940e8eb3716f9ee36b013
 }
 
 p {
