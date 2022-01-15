@@ -21,9 +21,12 @@
   </head>
   <body>
     <div class="d-flex">
-      <aside class="side-menu d-flex flex-column justify-content-between">
+      <aside
+        data-menu
+        class="side-menu is-open d-flex flex-column justify-content-between"
+      >
         <div class="arrow-button-wrapper w-100">
-          <button type="button" class="arrow-button btn">
+          <button data-menu-button type="button" class="arrow-button btn">
             <svg width="32" height="32" class="arrow">
               <use href="images/icons.svg#menu-arrow"></use>
             </svg>
@@ -36,7 +39,7 @@
                 <svg height="32" width="32" class="nav-icon">
                   <use href="images/icons.svg#menu-wallets"></use>
                 </svg>
-                Wallets
+                <span class="nav-label">Wallets</span>
               </a>
             </li>
             <li class="nav-item">
@@ -44,7 +47,7 @@
                 <svg height="32" width="32" class="nav-icon">
                   <use href="images/icons.svg#menu-source-rates"></use>
                 </svg>
-                Source of rates
+                <span class="nav-label">Source of rates</span>
               </a>
             </li>
             <li class="nav-item">
@@ -52,7 +55,7 @@
                 <svg height="32" width="32" class="nav-icon">
                   <use href="images/icons.svg#menu-transactions"></use>
                 </svg>
-                Transactions
+                <span class="nav-label">Transactions</span>
               </a>
             </li>
             <li class="nav-item">
@@ -60,24 +63,33 @@
                 <svg height="32" width="32" class="nav-icon">
                   <use href="images/icons.svg#menu-logout"></use>
                 </svg>
-                Log out
+                <span class="nav-label">Log out</span>
               </a>
             </li>
           </ul>
         </nav>
-        <img
-          class="menu-logo align-self-center"
-          width="151"
-          src="./images/vsys-logo.png"
-          alt=""
-        />
+        <div class="logo-thumb">
+          <img
+            class="menu-logo-big menu-logo align-self-center"
+            width="151"
+            src="./images/vsys-logo.png"
+            alt=""
+          />
+          <img
+            class="menu-logo-small menu-logo align-self-center"
+            width="80"
+            src="./images/vsys-logo-small.png"
+            alt=""
+          />
+        </div>
       </aside>
-      <div class="flex-grow-1 wallets-container">
+      <div class="container w-auto flex-grow-1 wallets-container">
         <div class="h-100">
           <div class="h-100 bg-dark"></div>
         </div>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
