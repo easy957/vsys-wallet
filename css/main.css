@@ -7,14 +7,6 @@ ol {
   list-style: none;
 }
 
-.visially-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
 :root {
   --background-color: #ffffff;
   --secondary-bcg-color-grey01: #f8f9fa;
@@ -173,5 +165,16 @@ ol {
 
 .wallets-container {
   height: 100vh;
+}
+
+.card-box {
+  background-color: var(--secondary-bcg-color-grey01);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12);
+  padding: 32px;
+}
+
+.card {
+  border: none;
+  outline: none;
 }
 /*# sourceMappingURL=main.css.map */
