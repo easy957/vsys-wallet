@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,gBAAgB,AAAC,CACf,MAAM,CAAE,KAAK,CACd",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/layouts/_login.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
