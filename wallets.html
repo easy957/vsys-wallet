@@ -1,99 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VSYS Wallet</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
-    <div class="d-flex">
-      <aside
-        data-menu
-        class="side-menu is-open d-flex flex-column justify-content-between"
-      >
-        <div class="arrow-button-wrapper w-100">
-          <button data-menu-button type="button" class="arrow-button btn">
-            <svg width="32" height="32" class="arrow">
-              <use href="images/icons.svg#menu-arrow"></use>
-            </svg>
-          </button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>VSYS Wallet</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,600&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/main.min.css" />
+    </head>
+    <body>
+        <div class="d-flex">
+            <aside data-menu class="side-menu is-open d-flex flex-column justify-content-between">
+                <div class="arrow-button-wrapper w-100">
+                    <button data-menu-button type="button" class="arrow-button btn">
+                        <svg width="32" height="32" class="arrow">
+                            <use href="images/icons.svg#menu-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+                <nav>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="" class="nav-link nav-link--active">
+                                <svg height="32" width="32" class="nav-icon">
+                                    <use href="images/icons.svg#menu-wallets"></use>
+                                </svg>
+                                <span class="nav-label">Wallets</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <svg height="32" width="32" class="nav-icon">
+                                    <use href="images/icons.svg#menu-source-rates"></use>
+                                </svg>
+                                <span class="nav-label">Source of rates</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <svg height="32" width="32" class="nav-icon">
+                                    <use href="images/icons.svg#menu-transactions"></use>
+                                </svg>
+                                <span class="nav-label">Transactions</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <svg height="32" width="32" class="nav-icon">
+                                    <use href="images/icons.svg#menu-logout"></use>
+                                </svg>
+                                <span class="nav-label">Log out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="logo-thumb">
+                    <img
+                        class="menu-logo-big menu-logo align-self-center"
+                        width="151"
+                        src="./images/vsys-logo.png"
+                        alt=""
+                    />
+                    <img
+                        class="menu-logo-small menu-logo align-self-center"
+                        width="80"
+                        src="./images/vsys-logo-small.png"
+                        alt=""
+                    />
+                </div>
+            </aside>
+            <div class="container w-auto flex-grow-1 wallets-container">
+                <div class="h-100">
+                    <div class="h-100 bg-dark"></div>
+                </div>
+            </div>
         </div>
-        <nav>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="" class="nav-link nav-link--active">
-                <svg height="32" width="32" class="nav-icon">
-                  <use href="images/icons.svg#menu-wallets"></use>
-                </svg>
-                <span class="nav-label">Wallets</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">
-                <svg height="32" width="32" class="nav-icon">
-                  <use href="images/icons.svg#menu-source-rates"></use>
-                </svg>
-                <span class="nav-label">Source of rates</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">
-                <svg height="32" width="32" class="nav-icon">
-                  <use href="images/icons.svg#menu-transactions"></use>
-                </svg>
-                <span class="nav-label">Transactions</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">
-                <svg height="32" width="32" class="nav-icon">
-                  <use href="images/icons.svg#menu-logout"></use>
-                </svg>
-                <span class="nav-label">Log out</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="logo-thumb">
-          <img
-            class="menu-logo-big menu-logo align-self-center"
-            width="151"
-            src="./images/vsys-logo.png"
-            alt=""
-          />
-          <img
-            class="menu-logo-small menu-logo align-self-center"
-            width="80"
-            src="./images/vsys-logo-small.png"
-            alt=""
-          />
-        </div>
-      </aside>
-      <div class="container w-auto flex-grow-1 wallets-container">
-        <div class="h-100">
-          <div class="h-100 bg-dark"></div>
-        </div>
-      </div>
-    </div>
-    <script src="./js/mobile-menu.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <script src="./js/mobile-menu.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
