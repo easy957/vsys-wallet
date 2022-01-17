@@ -14,6 +14,12 @@ input {
 .form-control {
   padding: 4px 8px;
   background-color: var(--secondary-bcg-color-grey01);
+  border: none;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.04);
+
+  &::placeholder {
+    color: var(--input-placeholder-color-grey05);
+  }
 
   &:focus {
     background-color: var(--secondary-bcg-color-grey01);
@@ -24,4 +30,13 @@ input {
   border-radius: 100px;
   padding: 8px;
   background-color: var(--secondary-bcg-color-grey01);
+
+  option:disabled {
+    color: var(--input-placeholder-color-grey05);
+  }
+}
+
+.form-check-input {
+  width: 16px;
+  height: 16px;
 }
