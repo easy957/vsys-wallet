@@ -1,3 +1,24 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input {
+  padding: 4px 8px;
+}
+
+.form-control {
+  background-color: var(--secondary-bcg-color-grey01);
+
+  &:focus {
+    background-color: var(--secondary-bcg-color-grey01);
+  }
+}
+
 .form-select {
   width: 161px;
   border-radius: 100px;

@@ -2,22 +2,12 @@
   width: 71px;
   height: 23px;
   font-size: 12px;
-  background-color: var(--secondary-bcg-color-grey01);
-
-  &:focus {
-    background-color: var(--secondary-bcg-color-grey01);
-  }
 }
 
 .source-added-input {
   text-align: center;
   width: 32px;
   height: 23px;
-  background-color: var(--secondary-bcg-color-grey01);
-
-  &:focus {
-    background-color: var(--secondary-bcg-color-grey01);
-  }
 
   &::placeholder {
     font-size: 12px;
