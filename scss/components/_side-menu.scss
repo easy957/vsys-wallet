@@ -1,12 +1,11 @@
 .side-menu {
-  width: 100px;
+  min-width: 100px;
   padding: 32px 0 64px;
   background-color: var(--secondary-bcg-color-grey01);
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1);
-  transition: width 250ms linear;
+  transition: min-width 250ms linear;
 
   &.is-open {
-    width: 256px;
     min-width: 256px;
 
     .nav-label {
