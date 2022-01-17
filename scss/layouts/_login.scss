@@ -1,35 +1,35 @@
 .login-container {
-    height: 100vh;
+  height: 100vh;
 
-    .big-logo {
-        margin-bottom: 90px;
+  .big-logo {
+    margin-bottom: 90px;
+  }
+
+  .form-control {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 4px 8px;
+    width: 280px;
+    border: none;
+    outline: none;
+    background: var(--secondary-bcg-color-grey01);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.04);
+
+    &::placeholder {
+      color: var(--input-placeholder-color-grey05);
     }
+  }
 
-    .form-control {
-        font-size: 12px;
-        line-height: 15px;
-        padding: 4px 8px;
-        width: 280px;
-        border: none;
-        outline: none;
-        background: var(--secondary-bcg-color-grey01);
-        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.04);
+  .login-input {
+    margin-bottom: 30px;
+  }
 
-        &::placeholder {
-            color: var(--input-placeholder-color-grey05);
-        }
-    }
+  .password-input {
+    margin-bottom: 76px;
+  }
 
-    .login-input {
-        margin-bottom: 30px;
-    }
-
-    .password-input {
-        margin-bottom: 76px;
-    }
-
-    .login-button {
-        border-radius: 100px;
-        padding: 8px 24px;
-    }
+  .login-button {
+    border-radius: 100px;
+    padding: 8px 24px;
+  }
 }
