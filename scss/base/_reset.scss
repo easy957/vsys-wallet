@@ -10,17 +10,3 @@ ol {
 p {
   margin: 0;
 }
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-input[type="number"] {
-  -moz-appearance: textfield;
-  padding: 4px 6px;
-}
-
-input[type="text"] {
-  padding: 4px 8px;
-}
