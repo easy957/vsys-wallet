@@ -17,9 +17,11 @@
 
 .source-table {
   width: 100%;
+  border-collapse: separate;
+  border-spacing: 5px 16px;
 
-  td {
-    padding: 0 5px;
+  .form-select {
+    width: 161px;
   }
 }
 
