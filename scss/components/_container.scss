@@ -1,0 +1,16 @@
+.main-container {
+  padding-left: 256px;
+  transform: translateX(0);
+  transition: transform 250ms linear;
+
+  &.menu-open {
+    transform: translateX(-156px);
+  }
+}
+
+.content-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  min-height: 100vh;
+}
