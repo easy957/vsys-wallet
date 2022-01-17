@@ -83,50 +83,194 @@
           />
         </div>
       </aside>
-      <div class="container w-auto flex-grow-1 wallets-container">
+      <div class="container wallets-container overflow-auto">
         <div class="row">
           <div class="col">
-            <h1>Source of rates</h1>
+            <h1 class="title-text">Source of rates</h1>
           </div>
         </div>
+
         <div class="row">
           <div class="col">
-            <div class="row">
-              <div class="col">
-                <p class="common-text">Bitcoin rate</p>
-                <p class="common-text">Litecoin rate</p>
-                <p class="common-text">Dogecoin rate</p>
-                <p class="common-text">All</p>
-              </div>
-              <div class="col">
-                <p class="common-text">Source of rate:</p>
-                <p class="common-text">Source of rate:</p>
-                <p class="common-text">Source of rate:</p>
-                <p class="common-text">Source of rate:</p>
-              </div>
-              <div class="col">
-                <select name="bitcoin-rate-source" class="form-select">
-                  <option value="bitrix">Bitrix binance</option>
-                  <option value="manual">Manual</option>
-                  <option value="custom">Custom</option>
-                </select>
-                <select name="litecoin-rate-source" class="form-select">
-                  <option value="bitrix">Bitrix binance</option>
-                  <option selected value="manual">Manual</option>
-                  <option value="custom">Custom</option>
-                </select>
-                <select name="dogecoin-rate-source" class="form-select">
-                  <option value="bitrix">Bitrix binance</option>
-                  <option value="manual">Manual</option>
-                  <option value="custom">Custom</option>
-                </select>
-                <select name="all-rate-source" class="form-select">
-                  <option value="bitrix">Bitrix binance</option>
-                  <option value="manual">Manual</option>
-                  <option selected value="custom">Custom</option>
-                </select>
-              </div>
-            </div>
+            <table class="source-table text-nowrap">
+              <tr>
+                <td><p class="common-text">Bitcoin rate</p></td>
+                <td><p class="common-text">Source of rate:</p></td>
+                <td>
+                  <select
+                    name="bitcoin-rate"
+                    class="form-select form-select-sm common-text"
+                  >
+                    <option value="bitrix">Bitrix binance</option>
+                    <option value="manual">Manual</option>
+                    <option value="custom">Custom</option>
+                  </select>
+                </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <p class="common-text">$</p>
+                    <input
+                      name="bitcoin-manual-price"
+                      class="form-control form-control-sm common-text source-manual-price"
+                      type="number"
+                    />
+                    <p class="common-text">per coin</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <p class="common-text">Added fee:</p>
+                    <input
+                      placeholder="00"
+                      name="bitcoin-added-fee"
+                      class="form-control form-control-sm source-added-input common-text"
+                      type="number"
+                    />
+                    <p class="common-text">% to rates</p>
+                  </div>
+                </td>
+                <td>
+                  <p class="common-text">
+                    Current rate:
+                    <span data-bitcoin-current-rate>$22.345,23</span> per Btc
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td><p class="common-text">Litecoin rate</p></td>
+                <td><p class="common-text">Source of rate:</p></td>
+                <td>
+                  <select
+                    name="litecoin-rate"
+                    class="form-select form-select-sm common-text"
+                  >
+                    <option value="bitrix">Bitrix binance</option>
+                    <option selected value="manual">Manual</option>
+                    <option value="custom">Custom</option>
+                  </select>
+                </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <p class="common-text">$</p>
+                    <input
+                      value="10000.56"
+                      name="litecoin-manual-price"
+                      class="form-control form-control-sm common-text source-manual-price"
+                      type="number"
+                    />
+                    <p class="common-text">per coin</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <p class="common-text">Added fee:</p>
+                    <input
+                      value="05"
+                      placeholder="00"
+                      name="litecoin-added-fee"
+                      class="form-control form-control-sm source-added-input common-text"
+                      type="number"
+                    />
+                    <p class="common-text">% to rates</p>
+                  </div>
+                </td>
+                <td>
+                  <p class="common-text">
+                    Current rate:
+                    <span data-litecoin-current-rate>$15.678,45</span> per Ltc
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td><p class="common-text">Bitcoin rate</p></td>
+                <td><p class="common-text">Source of rate:</p></td>
+                <td>
+                  <select
+                    name="bitcoin-rate"
+                    class="form-select form-select-sm common-text"
+                  >
+                    <option value="bitrix">Bitrix binance</option>
+                    <option value="manual">Manual</option>
+                    <option value="custom">Custom</option>
+                  </select>
+                </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <p class="common-text">$</p>
+                    <input
+                      name="bitcoin-manual-price"
+                      class="form-control form-control-sm common-text source-manual-price"
+                      type="number"
+                    />
+                    <p class="common-text">per coin</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <p class="common-text">Added fee:</p>
+                    <input
+                      placeholder="00"
+                      name="bitcoin-added-fee"
+                      class="form-control form-control-sm source-added-input common-text"
+                      type="number"
+                    />
+                    <p class="common-text">% to rates</p>
+                  </div>
+                </td>
+                <td>
+                  <p class="common-text">
+                    Current rate:
+                    <span data-bitcoin-current-rate>$22.345,23</span> per Btc
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td><p class="common-text">Bitcoin rate</p></td>
+                <td><p class="common-text">Source of rate:</p></td>
+                <td>
+                  <select
+                    name="bitcoin-rate"
+                    class="form-select form-select-sm common-text"
+                  >
+                    <option value="bitrix">Bitrix binance</option>
+                    <option value="manual">Manual</option>
+                    <option value="custom">Custom</option>
+                  </select>
+                </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <p class="common-text">$</p>
+                    <input
+                      name="bitcoin-manual-price"
+                      class="form-control form-control-sm common-text source-manual-price"
+                      type="number"
+                    />
+                    <p class="common-text">per coin</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <p class="common-text">Added fee:</p>
+                    <input
+                      placeholder="00"
+                      name="bitcoin-added-fee"
+                      class="form-control form-control-sm source-added-input common-text"
+                      type="number"
+                    />
+                    <p class="common-text">% to rates</p>
+                  </div>
+                </td>
+                <td>
+                  <p class="common-text">
+                    Current rate:
+                    <span data-bitcoin-current-rate>$22.345,23</span> per Btc
+                  </p>
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
