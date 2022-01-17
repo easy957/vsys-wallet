@@ -110,7 +110,7 @@
                         <div class="d-flex ps-4">
                             <div>
                                 <p class="common-text mb-3">Status:</p>
-                                <p class="common-text mb-3">Private Key::</p>
+                                <p class="common-text mb-3">Private Key:</p>
                                 <p class="common-text mb-3">API URL:</p>
                                 <p class="common-text mb-3">API Token::</p>
                             </div>
@@ -196,65 +196,70 @@
                         <div class="ps-4">
                             <table class="common-text">
                                 <tr>
-                                    <td class="pb-3">
+                                    <td class="pb-3 pe-3">
                                         Mark invoice as partually paid <br />
                                         if payment amount is less then:
                                     </td>
-                                    <td class="pb-3">
-                                        <input class="form-control common-text autopayout-input" type="number" />
+                                    <td class="pb-3 pe-3">
+                                        <div class="d-flex align-items-center">
+                                            <input class="form-control common-text autopayout-input" type="number" />
+                                            <p class="ps-2 common-text">%</p>
+                                        </div>
                                     </td>
-                                    <td class="pb-3">%</td>
                                 </tr>
                                 <tr>
-                                    <td class="pb-3">
+                                    <td class="pb-3 pe-3">
                                         Add fee to clients credit <br />
                                         if payment amount more then:
                                     </td>
                                     <td class="pb-3">
-                                        <input class="form-control common-text autopayout-input" type="number" />
+                                        <div class="d-flex align-items-center">
+                                            <input class="form-control common-text autopayout-input" type="number" />
+                                            <p class="ps-2 common-text">%</p>
+                                        </div>
                                     </td>
-                                    <td class="pb-3">%</td>
                                 </tr>
                                 <tr>
                                     <td class="pb-3">Recalculate invoice rate after</td>
                                     <td class="pb-3">
-                                        <input class="form-control common-text autopayout-input" type="number" />
-                                    </td>
-                                    <td class="pb-3">
-                                        <select class="form-select common-text" name="" id="">
-                                            <option selected>Day(s)</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">
                                         <div class="d-flex align-items-center">
-                                            Number of confirmation needed for transaction
-                                            <button class="btn" type="button">
-                                                <svg width="8px" height="8px">
-                                                    <use href="./images/icons.svg#arrow-left-icon"></use>
-                                                </svg>
-                                            </button>
-                                            <input class="form-control common-text autopayout-input" type="number" />
-                                            <button class="btn" type="button">
-                                                <svg class="arrow-right-icon" width="8px" height="8px">
-                                                    <use href="./images/icons.svg#arrow-left-icon"></use>
-                                                </svg>
-                                            </button>
+                                            <input
+                                                class="form-control common-text autopayout-input me-2"
+                                                type="number"
+                                            />
+
+                                            <select class="form-select common-text" name="" id="">
+                                                <option selected>Day(s)</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                            </select>
                                         </div>
                                     </td>
                                 </tr>
                             </table>
+
+                            <div class="d-flex align-items-center">
+                                <p class="common-text">Number of confirmation needed for transaction</p>
+                                <button class="btn" type="button">
+                                    <svg width="8px" height="8px">
+                                        <use href="./images/icons.svg#arrow-left-icon"></use>
+                                    </svg>
+                                </button>
+                                <input class="form-control common-text autopayout-input" type="number" />
+                                <button class="btn" type="button">
+                                    <svg class="arrow-right-icon" width="8px" height="8px">
+                                        <use href="./images/icons.svg#arrow-left-icon"></use>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col">
-                        <button type="button" class="button btn btn-primary">Save</button>
-                        <button type="button" class="button btn btn-primary">Delete</button>
+                    <div class="col d-flex justify-content-end">
+                        <button type="button" class="button btn btn-primary me-3">Save</button>
+                        <button type="button" class="button btn button-secondary">Delete</button>
                     </div>
                 </div>
             </div>
