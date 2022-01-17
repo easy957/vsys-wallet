@@ -155,7 +155,6 @@ input[type="number"] {
   color: var(--main-text-color-grey07);
 }
 
-<<<<<<< HEAD
 .success-text {
   color: var(--success-color);
 }
@@ -170,13 +169,13 @@ input[type="number"] {
 
 .inactive-text {
   color: var(--inactive-text-color-grey04);
-=======
+}
+
 .form-select {
   width: 161px;
   border-radius: 100px;
   padding: 8px;
   background-color: var(--secondary-bcg-color-grey01);
->>>>>>> 335fda7184140f372aff971dc407b32981c1c0f9
 }
 
 .login-container {
@@ -236,7 +235,6 @@ input[type="number"] {
 .card {
   border: none;
   outline: none;
-<<<<<<< HEAD
 }
 
 .card-link {
@@ -265,12 +263,6 @@ input[type="number"] {
 
 .cardlink-box--inactive {
   color: var(--inactive-text-color-grey04);
-}
-
-.form-select {
-  width: 161px;
-=======
->>>>>>> 335fda7184140f372aff971dc407b32981c1c0f9
 }
 
 .source-manual-price {
