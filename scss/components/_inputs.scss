@@ -12,6 +12,7 @@ input {
 }
 
 .form-control {
+  padding: 4px 8px;
   background-color: var(--secondary-bcg-color-grey01);
 
   &:focus {
