@@ -151,6 +151,14 @@ p {
   color: #dc3545;
 }
 
+.warning-text {
+  color: #ffc107;
+}
+
+.inactive-text {
+  color: var(--inactive-text-color-grey04);
+}
+
 .login-container {
   height: 100vh;
 }
@@ -192,14 +200,50 @@ p {
 }
 
 .card-box {
+  position: relative;
   background-color: var(--secondary-bcg-color-grey01);
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12);
   padding: 32px;
 }
 
+.currency-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .card {
   border: none;
   outline: none;
+}
+
+.card-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+.card-link + .card-link {
+  margin: 0px;
+}
+
+.info-content:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.card-icon {
+  fill: currentColor;
+  margin-right: 4px;
+}
+
+.cardlink-box {
+  padding: 9px 24px;
+}
+
+.cardlink-box--inactive {
+  color: var(--inactive-text-color-grey04);
 }
 
 .form-select {
