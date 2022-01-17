@@ -20,4 +20,18 @@
 }
 
 .transactions-data-table {
+  font-size: 10px;
+
+  thead {
+    border-bottom: 1px solid var(--grey-02);
+  }
+
+  th,
+  td {
+    padding: 14px 16px;
+  }
+
+  .table-subtitle {
+    color: var(--input-placeholder-color-grey05);
+  }
 }
