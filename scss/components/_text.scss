@@ -39,3 +39,10 @@
 .inactive-text {
     color: var(--inactive-text-color-grey04);
 }
+
+.inactive-link {
+    color: var(--inactive-text-color-grey04);
+    text-decoration: none;
+    cursor: initial;
+    pointer-events: none;
+}

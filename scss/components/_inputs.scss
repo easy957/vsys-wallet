@@ -1,27 +1,27 @@
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 input[type="number"] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
 
 input {
-  padding: 4px 8px;
+    padding: 4px 8px;
 }
 
 .form-control {
-  padding: 4px 8px;
-  background-color: var(--secondary-bcg-color-grey01);
-
-  &:focus {
+    padding: 4px 8px;
     background-color: var(--secondary-bcg-color-grey01);
-  }
+
+    &:focus {
+        background-color: var(--secondary-bcg-color-grey01);
+    }
 }
 
 .form-select {
-  border-radius: 100px;
-  padding: 8px;
-  background-color: var(--secondary-bcg-color-grey01);
+    border-radius: 100px;
+    padding: 8px 32px 8px 8px;
+    background-color: var(--secondary-bcg-color-grey01);
 }
