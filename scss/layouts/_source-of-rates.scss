@@ -16,10 +16,12 @@
   }
 }
 
-.source-table {
+.source-grid {
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 5px 16px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 16px 30px;
 
   .form-select {
     width: 161px;

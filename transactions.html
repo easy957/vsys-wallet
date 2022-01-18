@@ -35,7 +35,7 @@
         <nav>
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="" class="nav-link nav-link--active">
+              <a href="./wallets.html" class="nav-link">
                 <svg height="32" width="32" class="nav-icon">
                   <use href="images/icons.svg#menu-wallets"></use>
                 </svg>
@@ -43,7 +43,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">
+              <a href="./source-of-rates.html" class="nav-link">
                 <svg height="32" width="32" class="nav-icon">
                   <use href="images/icons.svg#menu-source-rates"></use>
                 </svg>
@@ -51,7 +51,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">
+              <a href="./transactions.html" class="nav-link nav-link--active">
                 <svg height="32" width="32" class="nav-icon">
                   <use href="images/icons.svg#menu-transactions"></use>
                 </svg>
@@ -59,7 +59,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">
+              <a href="./index.html" class="nav-link">
                 <svg height="32" width="32" class="nav-icon">
                   <use href="images/icons.svg#menu-logout"></use>
                 </svg>
@@ -91,7 +91,212 @@
         </div>
         <div class="row">
           <div class="col common-text">
-            <table class="w-100 text-nowrap transactions-settings-table">
+            <div class="transactions-settings-table">
+              <div class="d-flex align-items-center">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  name=""
+                  checked
+                />
+                <div class="flex-grow-1 pe-5">
+                  <p class="mb-1">Transaction ID:</p>
+                  <input
+                    class="form-control form-control-sm common-text"
+                    type="text"
+                    name=""
+                    value="7ced8c044ff6638db9a400b086b192b30a936663c71cac7c55d2d0b920571b96"
+                  />
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  name=""
+                  checked
+                />
+                <div class="pe-5">
+                  <p class="mb-1">Related Invoice:</p>
+                  <input
+                    class="form-control form-control-sm common-text"
+                    type="text"
+                    name=""
+                    placeholder="Invoice ID"
+                  />
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  name=""
+                  checked
+                />
+                <div>
+                  <p class="mb-1">Coin Amount:</p>
+                  <input
+                    class="form-control form-control-sm common-text"
+                    type="text"
+                    name=""
+                    placeholder="Amount"
+                  />
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  name=""
+                  checked
+                />
+                <div class="flex-grow-1 pe-5">
+                  <p class="mb-1">Adress:</p>
+                  <input
+                    class="transactions-address-input form-control form-control-sm common-text"
+                    type="text"
+                    name=""
+                    placeholder="Destination"
+                  />
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  name=""
+                  checked
+                />
+                <div class="pe-5">
+                  <p class="mb-1">Invoice Date</p>
+                  <input
+                    class="form-control form-control-sm common-text"
+                    type="date"
+                    name=""
+                    placeholder="Invoice ID"
+                  />
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  name=""
+                  checked
+                />
+                <div>
+                  <p class="mb-1">$ Amount</p>
+                  <input
+                    class="form-control form-control-sm common-text"
+                    type="text"
+                    name=""
+                    placeholder="Amount"
+                  />
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  name=""
+                  checked
+                />
+                <select
+                  name=""
+                  class="form-select common-text transactions-select"
+                >
+                  <option value="" disabled selected>Select status</option>
+                  <option value="">Value 2</option>
+                  <option value="">Value 3</option>
+                </select>
+              </div>
+              <div class="d-flex align-items-center">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  name=""
+                  checked
+                />
+                <select
+                  name=""
+                  class="form-select common-text transactions-select"
+                >
+                  <option value="" disabled selected>Select crypto</option>
+                  <option value="">Value 2</option>
+                  <option value="">Value 3</option>
+                </select>
+              </div>
+              <div class="d-flex align-items-center">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  name=""
+                  checked
+                />
+                <div>
+                  <p class="mb-1">Time</p>
+                  <input
+                    class="form-control form-control-sm common-text"
+                    type="time"
+                    name=""
+                    placeholder="Amount"
+                  />
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  name=""
+                  checked
+                />
+                <div class="flex-grow-1">
+                  <p class="mb-1">Invoice Coin:</p>
+                  <input
+                    class="transactions-invoice-input form-control form-control-sm common-text"
+                    type="text"
+                    name=""
+                    placeholder="Amount"
+                  />
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  name=""
+                  checked
+                />
+                <div class="pe-5">
+                  <p class="mb-1">Date</p>
+                  <input
+                    class="form-control form-control-sm common-text"
+                    type="date"
+                    name=""
+                    placeholder="Invoice ID"
+                  />
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  name=""
+                  checked
+                />
+                <div>
+                  <p class="mb-1">Invoice Time</p>
+                  <input
+                    class="form-control form-control-sm common-text"
+                    type="time"
+                    name=""
+                    placeholder="Amount"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- <table class="w-100 text-nowrap">
               <tr>
                 <td class="w-50">
                   <div class="d-flex align-items-center">
@@ -327,7 +532,7 @@
                   </div>
                 </td>
               </tr>
-            </table>
+            </table> -->
           </div>
         </div>
         <div class="row">
