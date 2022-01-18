@@ -1,9 +1,27 @@
 .button {
-    border-radius: 100px;
-    padding: 8px 24px;
+  border-radius: 100px;
+  padding: 8px 24px;
+
+  &:hover {
+  }
+
+  &:active {
+  }
+
+  &:focus {
+  }
 }
 
 .button-secondary {
-    color: var(--accent-color);
-    background-color: var(--accent-secondary-color);
+  color: var(--accent-color);
+  background-color: var(--accent-secondary-color);
+
+  &:hover {
+  }
+
+  &:active {
+  }
+
+  &:focus {
+  }
 }
